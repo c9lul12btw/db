@@ -5,4 +5,12 @@ public class scp096 {
     private String itemID = "SCP-096";
     private String itemNick = "The Shy Guy";
     private String objectClass = "Euclid";
+
+    public String getItemID() {
+        return itemID;
+    }
+
+    public String getObjectClass() {
+        return objectClass;
+    }
 }

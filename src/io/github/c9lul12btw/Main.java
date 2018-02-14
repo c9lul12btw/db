@@ -1,7 +1,5 @@
 package io.github.c9lul12btw;
 
-import io.github.c9lul12btw.classes.euclid.*;
-
 import java.util.Scanner;
 
 public class Main {
@@ -10,15 +8,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        search();
+        searchType();
     }
 
-    private static void search() {
+    private static void searchType() {
 
         boolean correctSearch = false;
         while (!correctSearch) {
 
-            System.out.println("SEARCH TYPES: ID, CLASS");
+            System.out.println("SEARCH TYPES: ID, CLASS, ALL");
             System.out.print("Enter search type: ");
             String searchType = s.nextLine();
 
@@ -26,10 +24,17 @@ public class Main {
                 case "id":
                     correctSearch = true;
                     System.out.println("\nSearching for SCP-ID.\n");
+                    searchId();
                     break;
                 case "class":
                     correctSearch = true;
                     System.out.println("\nSearching for SCP-CLASS.\n");
+                    searchClass();
+                    break;
+                case "all":
+                    correctSearch = true;
+                    System.out.println("\nListing all SCP Entries.\n");
+                    masterList.list();
                     break;
                 default:
                     correctSearch = false;
@@ -37,5 +42,13 @@ public class Main {
                     break;
             }
         }
+    }
+
+    private static void searchId() {
+
+    }
+
+    private static void searchClass() {
+
     }
 }

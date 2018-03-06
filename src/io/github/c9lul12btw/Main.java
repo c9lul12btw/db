@@ -2,53 +2,80 @@ package io.github.c9lul12btw;
 
 import java.util.Scanner;
 
+@SuppressWarnings("ContinueOrBreakFromFinallyBlock")
 public class Main {
 
     private static Scanner s = new Scanner(System.in);
 
     public static void main(String[] args) {
 
-        searchType();
+        login login = new login();
+        int clearance = login.entry();
+        //int clearance = 5;
+        enterCommand(clearance);
     }
 
-    private static void searchType() {
+    private static void enterCommand(int clearance) {
 
-        boolean correctSearch = false;
-        while (!correctSearch) {
+        boolean exitLoop = false;
+        String commandString;
+        String paramString;
+        command command = new command();
 
-            System.out.println("SEARCH TYPES: ID, CLASS, ALL");
-            System.out.print("Enter search type: ");
-            String searchType = s.nextLine();
+        while (!exitLoop) {
 
-            switch (searchType.toLowerCase()) {
+            System.out.print("\nENTER A COMMAND: ");
+            String commandEntry = s.next();
+
+            Scanner split = new Scanner(commandEntry).useDelimiter("/");
+
+            if (commandEntry.contains("/")) {
+                commandString = split.next();
+                paramString = split.next();
+            } else {
+                commandString = split.next();
+                paramString = "";
+            }
+
+            switch (commandString.toLowerCase()) {
                 case "id":
-                    correctSearch = true;
-                    System.out.println("\nSearching for SCP-ID.\n");
-                    searchId();
+                    command.clear();
+                    command.searchID(paramString);
                     break;
+
                 case "class":
-                    correctSearch = true;
-                    System.out.println("\nSearching for SCP-CLASS.\n");
-                    searchClass();
+                    command.clear();
+                    command.searchClass(paramString);
                     break;
-                case "all":
-                    correctSearch = true;
-                    System.out.println("\nListing all SCP Entries.\n");
-                    masterList.list();
+
+                case "list":
+                    command.clear();
+                    command.list();
                     break;
+
+                case "fac":
+                    command.clear();
+                    command.searchFac(paramString);
+                    break;
+
+                case "clear":
+                    command.clear();
+                    break;
+
+                case "help":
+                    command.clear();
+                    command.help();
+                    break;
+
+                case "exit":
+                    exitLoop = true;
+                    s.close();
+                    break;
+
                 default:
-                    correctSearch = false;
-                    System.out.println("\nPlease enter a correct value.\n");
+                    System.out.println("\nUNKNOWN COMMAND. USE \"HELP\" FOR INFORMATION.\n");
                     break;
             }
         }
-    }
-
-    private static void searchId() {
-
-    }
-
-    private static void searchClass() {
-
     }
 }

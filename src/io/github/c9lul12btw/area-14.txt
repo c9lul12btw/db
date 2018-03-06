@@ -1,0 +1,8 @@
+> AREA-14 (Armed Biological Containment AREA-14)
+
+AREA-14 is a dedicated containment facility located in the Ruby Mountains of
+Nevada, United States. AREA-14 is primarily used for large-scale, dangerous,
+and/or hostile anomalous entities and as such is staffed with a regiment-strength
+security detachment as well as heavy weapons, armored vehicles, and air support.
+
+> Objects contained at this facility include: SCP-058, SCP-082, SCP-165, SCP-939, SCP-940

@@ -1,0 +1,9 @@
+> SITE-15
+
+SITE-15 is a Foundation facility located on the United States west coast that
+specializes in the containment and study of electric, electronic, and
+computer-based anomalies. The primary storage and containment wings of SITE-15
+are electromagnetically isolated to prevent any interaction between anomalous
+electronics and the outside world.
+
+> Objects contained at this facility include: SCP-079, SCP-719, SCP-896

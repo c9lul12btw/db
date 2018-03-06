@@ -1,0 +1,12 @@
+> SITE-11
+TYPE: HUMANOID
+
+SITE-11 is a large-scale Foundation facility located in the mid-western United
+States consisting of an entire self-sustaining community including residential
+housing, commercial businesses, and industrial/manufacturing facilities as well
+as an extensive underground containment and research complex. The Foundation
+maintains strict tracking of all personnel and civilians within SITE-11 and as such,
+the facility is often used as a safe location for personnel requiring additional
+security and protection.
+
+> Objects contained at this facility include: SCP-986

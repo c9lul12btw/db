@@ -1,0 +1,9 @@
+> AREA-02 (Armed Reliquary and Containment AREA-02)
+
+AREA-02 is a remote facility whose primary purpose is to contain highly
+dangerous, hostile, or otherwise hazardous anomalies, including multiple
+Keter-class objects. In addition to a battalion-strength security detachment,
+AREA-02 is also equipped with multiple nuclear fail-safes as a final option in
+the case of a catastrophic breach or loss of containment.
+
+> Objects contained at this facility include: SCP-122, SCP-743
